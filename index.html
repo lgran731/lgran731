@@ -1176,7 +1176,281 @@
         </div>
     </div>
 
-    <!-- Modal 2-4: ML, Voice, Workload (content truncated for brevity - full modals follow same pattern) -->
+    <!-- Modal 2: ML Inference Platform -->
+    <div class="modal" id="modal-ml">
+        <div class="modal-close" onclick="closeModal('modal-ml')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">ML Productization | Jan 2024 – June 2024</div>
+                <h2 class="modal-title">ML Inference & Tracking Platform</h2>
+                <p class="modal-subtitle">Scaled computer vision platform from failed prototype to production MVP, supporting 18 concurrent camera streams with real-time object detection and tracking.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">18</div>
+                    <div class="modal-stat-label">Camera Streams</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">40 FPS</div>
+                    <div class="modal-stat-label">Processing Speed</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">75%</div>
+                    <div class="modal-stat-label">Detection Accuracy</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">2×</div>
+                    <div class="modal-stat-label">Throughput Increase</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>The previous ML platform attempt failed to scale beyond 4 camera streams and achieved only 30% detection accuracy. The requirement was to build a production-ready computer vision system supporting 18+ concurrent streams with 75%+ accuracy for real-time object detection and tracking in operational environments.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned the platform from failed prototype to production MVP, serving as technical lead and program manager. I drove architectural decisions, performance optimization, and cross-functional coordination across engineering, research, and operations teams.</p>
+                <p>Key responsibilities included:</p>
+                <ul>
+                    <li>Diagnosed root cause of previous failure: inefficient Python implementation and FP32 model precision limiting throughput</li>
+                    <li>Led Python→C++ migration for performance-critical inference pipeline, achieving 2× throughput increase</li>
+                    <li>Drove FP32→FP16 model optimization while maintaining accuracy requirements (30% → 75%)</li>
+                    <li>Established multi-GPU architecture supporting 18 concurrent camera streams at 40 FPS</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>C++ Inference Engine</h4>
+                        <p>Migrated performance-critical components from Python to C++, implementing client-server architecture with multi-GPU support. Achieved 2× throughput increase while maintaining code maintainability.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Model Optimization</h4>
+                        <p>Converted YOLO models from FP32 to FP16 precision, reducing memory footprint while improving detection accuracy from 30% to 75% through careful hyperparameter tuning and data augmentation.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Scalable Architecture</h4>
+                        <p>Designed multi-GPU pipeline supporting 18 concurrent camera streams at 40 FPS. Implemented load balancing and fault tolerance to ensure reliable real-time performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Scaled platform from 4 to 18 concurrent camera streams, meeting all operational requirements</li>
+                    <li>Improved detection accuracy from 30% to 75%, enabling reliable object tracking in production</li>
+                    <li>Achieved 40 FPS processing speed with 2× throughput increase through C++ migration</li>
+                    <li>Platform now serves as core dependency for third-party model evaluations and research partnerships</li>
+                    <li>Architecture established as reference implementation for future computer vision platforms</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Multi-GPU</span>
+                    <span class="tech-tag">Client-Server Architecture</span>
+                    <span class="tech-tag">FP16 Optimization</span>
+                    <span class="tech-tag">Real-Time Systems</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Voice-Based AI Assistant Platform -->
+    <div class="modal" id="modal-voice">
+        <div class="modal-close" onclick="closeModal('modal-voice')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">AI Product | Aug 2023 – Feb 2024</div>
+                <h2 class="modal-title">Voice-Based AI Assistant Platform</h2>
+                <p class="modal-subtitle">Multi-phase AI platform progressing from speech transcription to voice command execution, validated with 21 users across 4 concurrent audio streams.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">&lt;300ms</div>
+                    <div class="modal-stat-label">Command Latency</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">75%+</div>
+                    <div class="modal-stat-label">Speech Accuracy</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">21</div>
+                    <div class="modal-stat-label">Users Validated</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Audio Streams</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>Build a voice-based AI assistant platform progressing through multiple phases: Phase 1 (transcription), Phase 2 (natural language understanding), and Phase 3 (voice command execution). Platform required <300ms latency, 75%+ speech accuracy, and support for 4 concurrent audio streams in operational environments.</p>
+                <p>Critical constraint: external vendor was misaligned on technical architecture, threatening platform integrity and timeline.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned the platform through its complete product lifecycle, serving as single-threaded owner responsible for scope definition, vendor management, technical validation, and go/no-go decisions across all three phases.</p>
+                <p>Key responsibilities included:</p>
+                <ul>
+                    <li>Defined strict performance gates: <300ms latency, 75%+ accuracy, 4 concurrent streams</li>
+                    <li>Managed vendor relationship and technical integration across development cycle</li>
+                    <li>Made critical decision to terminate vendor after 6 months due to architecture misalignment</li>
+                    <li>Conducted user validation with 21 participants across 4 concurrent audio streams</li>
+                    <li>Coordinated cross-functional teams including NLP engineers, audio specialists, and UX researchers</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Multi-Phase Architecture</h4>
+                        <p>Designed phased approach: Phase 1 (speech-to-text), Phase 2 (NLP understanding), Phase 3 (command execution). Each phase validated against performance gates before proceeding.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Performance Gates</h4>
+                        <p>Established quantified thresholds: <300ms end-to-end latency, 75%+ transcription accuracy, support for 4 concurrent audio streams. All metrics measured and documented before phase advancement.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Multi-Agent AI</h4>
+                        <p>Implemented multi-agent architecture combining speech recognition, natural language processing, and command execution agents with real-time coordination and error handling.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully delivered Phase 1 meeting all performance requirements (<300ms latency, 75%+ accuracy)</li>
+                    <li>Validated platform with 21 users across 4 concurrent audio streams in realistic conditions</li>
+                    <li>Made critical vendor termination decision after 6 months, protecting platform architecture integrity</li>
+                    <li>Established reusable speech-to-text infrastructure now deployed across multiple programs</li>
+                    <li>Platform architecture serves as foundation for future multi-agent AI systems</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Speech-to-Text</span>
+                    <span class="tech-tag">Real-Time Audio</span>
+                    <span class="tech-tag">Multi-Agent AI</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">WebRTC</span>
+                    <span class="tech-tag">Microservices</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Workload Analytics Platform -->
+    <div class="modal" id="modal-workload">
+        <div class="modal-close" onclick="closeModal('modal-workload')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">Signal Processing + ML | Oct 2023 – May 2024</div>
+                <h2 class="modal-title">Workload Analytics Platform</h2>
+                <p class="modal-subtitle">Built real-time physiological monitoring platform from raw biosignals to ML inference, replacing unreliable commercial solutions and enabling 4 active research partnerships.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">Real-Time</div>
+                    <div class="modal-stat-label">ML Inference</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Evaluation Events</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Active Partnerships</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">Python→C#</div>
+                    <div class="modal-stat-label">Migration</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>Existing commercial workload analytics solutions proved unreliable for operational requirements. The challenge was to build a custom platform processing raw physiological signals (ECG, EEG, respiration) in real-time and delivering ML-based workload predictions to support objective technology evaluation.</p>
+                <p>Platform needed to support 4 concurrent evaluation events and enable research partnerships (CRADAs) with external organizations.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned the platform from raw signal processing through production deployment, serving as technical lead responsible for architecture, implementation, and research partnership coordination.</p>
+                <p>Key responsibilities included:</p>
+                <ul>
+                    <li>Designed end-to-end pipeline from biosignal acquisition to ML inference output</li>
+                    <li>Implemented custom signal processing algorithms for ECG, EEG, and respiration data</li>
+                    <li>Led Python→C# migration for production deployment and .NET integration</li>
+                    <li>Coordinated 4 active research partnerships (CRADAs) with external organizations</li>
+                    <li>Established platform as foundation for objective technology evaluation framework</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Signal Processing Pipeline</h4>
+                        <p>Built custom signal processing from scratch: filtering, artifact removal, feature extraction from ECG/EEG/respiration. Replaced unreliable commercial solutions with validated algorithms.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Real-Time ML Inference</h4>
+                        <p>Implemented real-time ML models predicting workload state from physiological features. Achieved production-grade latency and accuracy for operational decision-making.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Production Migration</h4>
+                        <p>Migrated platform from Python (research) to C# (production) while maintaining algorithm fidelity. Enabled seamless integration with .NET-based operational systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully replaced unreliable commercial solutions with custom platform meeting all requirements</li>
+                    <li>Enabled 4 major evaluation events with real-time workload analytics capabilities</li>
+                    <li>Established 4 active research partnerships (CRADAs) leveraging platform capabilities</li>
+                    <li>Platform now serves as foundation for objective technology evaluation framework</li>
+                    <li>C# migration enabled production deployment and .NET ecosystem integration</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Signal Processing</span>
+                    <span class="tech-tag">ML Inference</span>
+                    <span class="tech-tag">ECG Analysis</span>
+                    <span class="tech-tag">EEG Processing</span>
+                    <span class="tech-tag">Real-Time Systems</span>
+                    <span class="tech-tag">.NET Integration</span>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Modal functionality
@@ -1268,4 +1542,10 @@
         // Observe platform cards
         document.querySelectorAll('.platform-card').forEach((card, index) => {
             card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
