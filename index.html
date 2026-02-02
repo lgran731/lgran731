@@ -1183,6 +1183,295 @@
         </div>
     </div>
 
+    <!-- Modal 2: ML Inference Platform -->
+    <div class="modal" id="modal-ml">
+        <div class="modal-close" onclick="closeModal('modal-ml')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">ML Productization | Mar 2024 – Present</div>
+                <h2 class="modal-title">ML Inference & Tracking Platform</h2>
+                <p class="modal-subtitle">Scaled computer vision platform from failed prototype to production MVP, improving model accuracy from 30% to 75% and doubling throughput for real-time object detection across 18 camera streams.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">18</div>
+                    <div class="modal-stat-label">Camera Streams</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">40 FPS</div>
+                    <div class="modal-stat-label">Processing Speed</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">75%</div>
+                    <div class="modal-stat-label">Detection Accuracy</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">2×</div>
+                    <div class="modal-stat-label">Throughput Increase</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">&lt;70ms</div>
+                    <div class="modal-stat-label">Latency</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>The program needed a production-ready ML inference platform to support 18 concurrent camera streams for real-time object detection and tracking. The existing Python prototype had failed—it couldn't handle the throughput requirements and model accuracy was stuck at 30%, making it unusable for operational evaluations.</p>
+                <p>The platform needed to process 18 streams at 40 FPS with sub-70ms latency while maintaining acceptable detection accuracy. Without this capability, third-party model evaluations and downstream simulation programs couldn't proceed.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned the end-to-end platform transformation, from technical roadmap definition through production deployment. This included defining performance gates, coordinating engineering teams, and making critical technical decisions about architecture migration and optimization strategies.</p>
+                <p>Key responsibilities included:</p>
+                <ul>
+                    <li>Defining delivery gates: 40 FPS processing speed, <70ms latency, 75%+ detection accuracy across all camera streams</li>
+                    <li>Driving Python→C++ migration decision and coordinating implementation with engineering team</li>
+                    <li>Leading FP32→FP16 optimization effort to improve throughput while maintaining accuracy</li>
+                    <li>Establishing platform as core dependency for all third-party model evaluations</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Python→C++ Migration</h4>
+                        <p>Drove complete platform rewrite from Python to C++ to meet real-time performance requirements. Improved model accuracy from 30% to 75% and doubled throughput for 18-stream processing.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Multi-GPU Architecture</h4>
+                        <p>Implemented client-server architecture with multi-GPU support, enabling concurrent processing of 18 camera streams at 40 FPS with <70ms latency.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>YOLO Integration</h4>
+                        <p>Integrated YOLO object detection models with custom tracking algorithms, optimizing for real-time performance while maintaining detection accuracy requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully scaled platform from failed prototype to production MVP supporting 18 concurrent camera streams at 40 FPS</li>
+                    <li>Improved model detection accuracy from 30% to 75%, making platform operationally viable for the first time</li>
+                    <li>Doubled throughput through Python→C++ migration and FP32→FP16 optimization</li>
+                    <li>Achieved <70ms latency requirement, enabling real-time object detection and tracking</li>
+                    <li>Platform now serves as core dependency for all third-party model evaluations</li>
+                    <li>Enabled downstream simulation programs that were previously blocked by platform limitations</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Multi-GPU</span>
+                    <span class="tech-tag">Real-Time Inference</span>
+                    <span class="tech-tag">Client-Server Architecture</span>
+                    <span class="tech-tag">Object Detection</span>
+                    <span class="tech-tag">Computer Vision</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Voice AI Assistant Platform -->
+    <div class="modal" id="modal-voice">
+        <div class="modal-close" onclick="closeModal('modal-voice')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">AI Product | Jun 2024 – Present</div>
+                <h2 class="modal-title">Voice-Based AI Assistant Platform</h2>
+                <p class="modal-subtitle">Owned platform roadmap across transcription, command, and assistant phases, establishing <300ms latency and 75%+ accuracy delivery gates validated with 21 users.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">&lt;300ms</div>
+                    <div class="modal-stat-label">Command Latency</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">75%+</div>
+                    <div class="modal-stat-label">Speech Accuracy</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">21</div>
+                    <div class="modal-stat-label">Users Validated</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Concurrent Audio Streams</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">3</div>
+                    <div class="modal-stat-label">Platform Phases</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>The program needed a voice-based AI assistant to enable hands-free operation in high-workload simulation environments. The platform needed to progress through three distinct phases: speech transcription, voice command execution, and full AI assistant capabilities.</p>
+                <p>The technical challenge was delivering <300ms command latency and 75%+ speech recognition accuracy across 4 concurrent audio streams while managing vendor relationships and making critical build-vs-buy decisions to protect platform integrity.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned the complete platform roadmap, from initial transcription capabilities through advanced AI assistant features. This included defining delivery gates, managing vendor relationships, and making strategic decisions about technical direction.</p>
+                <p>Key responsibilities included:</p>
+                <ul>
+                    <li>Defining phase-gated roadmap: transcription → voice commands → AI assistant capabilities</li>
+                    <li>Establishing performance thresholds: <300ms command latency, 75%+ speech accuracy across 4 audio streams</li>
+                    <li>Coordinating engineering implementation across transcription, NLP, and multi-agent AI systems</li>
+                    <li>Conducting technical and delivery assessment of external vendor, ultimately terminating partnership following misalignment to protect platform integrity</li>
+                    <li>Validating platform performance with 21 users under operational conditions</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Real-Time Speech Processing</h4>
+                        <p>Implemented speech-to-text pipeline supporting 4 concurrent audio streams with <300ms latency requirement, enabling hands-free operation in high-workload environments.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Voice Command System</h4>
+                        <p>Built NLP-based command recognition system achieving 75%+ accuracy, validated with 21 users executing operational voice commands across simulation scenarios.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Multi-Agent AI Architecture</h4>
+                        <p>Designed multi-phase platform architecture supporting progression from basic transcription to full AI assistant capabilities with extensible command framework.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully delivered voice transcription and command phases, establishing foundation for AI assistant capabilities</li>
+                    <li>Achieved <300ms command latency and 75%+ speech accuracy requirements across 4 concurrent audio streams</li>
+                    <li>Validated platform with 21 users under operational conditions, demonstrating hands-free command execution</li>
+                    <li>Protected platform integrity by terminating misaligned vendor partnership following technical and delivery assessment</li>
+                    <li>Platform now progressing through multi-phase roadmap toward full AI assistant capabilities</li>
+                    <li>Established repeatable framework for voice-based AI features in simulation environments</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Speech-to-Text</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Real-Time Audio</span>
+                    <span class="tech-tag">Multi-Agent AI</span>
+                    <span class="tech-tag">Voice Commands</span>
+                    <span class="tech-tag">AI Assistant</span>
+                    <span class="tech-tag">Low-Latency Systems</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Workload Analytics Platform -->
+    <div class="modal" id="modal-workload">
+        <div class="modal-close" onclick="closeModal('modal-workload')">×</div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-tag">Signal Processing + ML | Mar 2024 – Present</div>
+                <h2 class="modal-title">Workload Analytics Platform</h2>
+                <p class="modal-subtitle">Built real-time physiological monitoring platform from raw biosignals to ML inference, enabling 4 active research partnerships and objective technology evaluation framework.</p>
+            </div>
+
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-value">Real-Time</div>
+                    <div class="modal-stat-label">ML Inference</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Evaluation Events</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">4</div>
+                    <div class="modal-stat-label">Active CRADAs</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-value">Python→C#</div>
+                    <div class="modal-stat-label">Production Migration</div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>The Challenge</h3>
+                <p>The program needed a production-ready platform for real-time physiological monitoring and workload assessment using ECG and other biosignals. Existing commercial solutions were unreliable and couldn't meet real-time ML inference requirements for operational environments.</p>
+                <p>The platform needed to process raw biosignals, perform custom signal processing, and deliver real-time ML inference while supporting multiple research partnerships and technology evaluations.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Role & Approach</h3>
+                <p>I owned the platform build from raw signal acquisition through real-time ML inference, including signal processing algorithm development, production architecture, and partnership coordination.</p>
+                <p>Key responsibilities included:</p>
+                <ul>
+                    <li>Defining platform architecture: raw biosignal processing → feature extraction → real-time ML inference</li>
+                    <li>Replacing unreliable commercial solutions with custom signal processing algorithms</li>
+                    <li>Driving Python→C# migration for production deployment in real-time environments</li>
+                    <li>Coordinating 4 active research partnerships (CRADAs) requiring platform integration</li>
+                    <li>Establishing objective technology evaluation framework using platform outputs</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technical Solution</h3>
+                <div class="modal-highlights">
+                    <div class="highlight-box">
+                        <h4>Custom Signal Processing</h4>
+                        <p>Developed ECG analysis and biosignal processing algorithms, replacing unreliable commercial solutions with production-ready custom implementations for real-time monitoring.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Real-Time ML Pipeline</h4>
+                        <p>Built end-to-end pipeline from raw biosignals to real-time ML inference, enabling workload assessment and performance monitoring during operational scenarios.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Production Architecture</h4>
+                        <p>Migrated platform from Python research code to C# production system, meeting real-time requirements while maintaining signal processing accuracy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>Results & Impact</h3>
+                <ul>
+                    <li>Successfully built platform from raw biosignals to real-time ML inference, replacing unreliable commercial solutions</li>
+                    <li>Enabled 4 active research partnerships (CRADAs) requiring physiological monitoring capabilities</li>
+                    <li>Platform supported 4 major evaluation events, demonstrating operational viability</li>
+                    <li>Migrated Python→C# for production deployment, meeting real-time requirements in operational environments</li>
+                    <li>Established objective technology evaluation framework using platform-generated workload metrics</li>
+                    <li>Platform now serves as foundation for all physiological monitoring and workload assessment programs</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Signal Processing</span>
+                    <span class="tech-tag">ECG Analysis</span>
+                    <span class="tech-tag">ML Inference</span>
+                    <span class="tech-tag">Real-Time Systems</span>
+                    <span class="tech-tag">Biosignal Processing</span>
+                    <span class="tech-tag">Workload Assessment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal 2-4: ML, Voice, Workload (content truncated for brevity - full modals follow same pattern) -->
     
     <script>
